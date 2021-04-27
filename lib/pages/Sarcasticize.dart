@@ -100,7 +100,6 @@ class _SarcasticizeState extends State<Sarcasticize> {
           children: <Widget>[
             Container(
               margin: EdgeInsets.symmetric(horizontal: 8, vertical: 16),
-              height: 100,
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
@@ -109,6 +108,7 @@ class _SarcasticizeState extends State<Sarcasticize> {
                     style: TextStyle(color: Colors.blue),
                   ),
                   TextField(
+                    minLines: 5,
                     maxLines: null,
                     controller: inputController,
                     onChanged: (String value) {
@@ -123,7 +123,6 @@ class _SarcasticizeState extends State<Sarcasticize> {
             ),
             Container(
               margin: EdgeInsets.symmetric(horizontal: 8, vertical: 16),
-              height: 100,
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
@@ -132,6 +131,7 @@ class _SarcasticizeState extends State<Sarcasticize> {
                     style: TextStyle(color: Colors.blue),
                   ),
                   TextField(
+                    minLines: 5,
                     maxLines: null,
                     controller: outputController,
                   ),

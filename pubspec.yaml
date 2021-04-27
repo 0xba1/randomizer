@@ -1,5 +1,5 @@
 name: randomizer
-description: A new Flutter application.
+description: A Flutter application that can be used to generate passwords, pick random numbers, flip a coin (all cryptographically secure), and create sarcastic versions of words or sentences.
 
 # The following line prevents the package from being accidentally published to
 # pub.dev using `pub publish`. This is preferred for private packages.
@@ -32,6 +32,7 @@ dependencies:
 dev_dependencies:
   flutter_test:
     sdk: flutter
+  flutter_launcher_icons: "^0.9.0"
 
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec

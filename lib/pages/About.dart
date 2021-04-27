@@ -9,29 +9,39 @@ class About extends StatelessWidget {
       appBar: AppBar(
         title: Text("About App"),
       ),
-      body: Container(
-        child: Column(
-          children: <Widget>[
-            Container(
-              child: Text(
-                "Randomizer",
-                style: TextStyle(color: Colors.blue),
+      body: Center(
+        child: Container(
+          child: Column(
+            children: <Widget>[
+              Container(
+                padding: EdgeInsets.all(6.0),
+                child: Text(
+                  "Randomizer",
+                  style: TextStyle(
+                    color: Colors.blue,
+                    fontSize: 32,
+                  ),
+                ),
               ),
-            ),
-            Container(
-              child: Text("Version 1.0.0"),
-            ),
-            Container(
-              child: Image.asset(
-                '/assets/images/logo-blueback.png',
-                width: 100,
-                height: 100,
+              Container(
+                padding: EdgeInsets.all(6.0),
+                child: Text(
+                  "Version 1.0.0",
+                  style: TextStyle(color: Colors.black.withOpacity(0.5)),
+                ),
               ),
-            ),
-            Container(
-              child: Text("SimpleTools 2021"),
-            ),
-          ],
+              Container(
+                child: Image(
+                  image: AssetImage("assets/images/logo-transback.png"),
+                  width: 100,
+                  height: 100,
+                ),
+              ),
+              Container(
+                child: Text("SimpleTools ©2021"),
+              ),
+            ],
+          ),
         ),
       ),
     );
